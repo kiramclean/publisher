@@ -1,0 +1,23 @@
+{
+  "name": "publisher",
+  "version": "0.0.0",
+  "description": "Publisher -- minimalistic UI for static site publishing",
+  "main": "index.js",
+  "repository": "git@github.com:kiramclean/publisher.git",
+  "author": "Kira McLean",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "watch": "shadow-cljs watch app",
+    "release": "shadow-cljs release app",
+    "clean": "rm -rf target && rm -rf public/js"
+  },
+  "devDependencies": {
+    "shadow-cljs": "^2.11.18"
+  },
+  "dependencies": {
+    "create-react-class": "^15.7.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
