@@ -1,10 +1,9 @@
 (ns publisher.core
-  (:require [reagent.core :as r]))
-
-(defn app []
-  [:div.container "Hello world"])
+  (:require [reagent.dom :as rdom]
+            [publisher.layout :as layout]
+            [publisher.login]))
 
 (defn ^:export main []
-  (r/render
-    [app]
+  (rdom/render
+    [layout/app]
     (.getElementById js/document "app")))

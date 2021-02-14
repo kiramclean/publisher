@@ -1,8 +1,8 @@
 {:source-paths ["src"]
 
- :dependencies [[binaryage/devtools "0.9.10"]
+ :dependencies [[binaryage/devtools         "1.0.2"]
                 [proto-repl "0.3.1"]
-                [reagent "0.8.0"]]
+                [reagent "1.0.0"]]
 
  :nrepl        {:port 3333}
 
