@@ -1,0 +1,39 @@
+:root {
+  --black: #313131;
+  --darker-black: #222222;
+  --white: #fbfbfb;
+  --light-grey: #dddddd;
+
+  --background: var(--white);
+  --darker-background: var(--light-grey);
+  --text: var(--black);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: var(--white);
+    --background: var(--black);
+    --darker-background: var(--darker-black);
+  }
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
+  color: var(--text);
+  background: var(--background);
+  height: 100vh;
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  background: var(--darker-background);
+}
