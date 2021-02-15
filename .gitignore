@@ -1,4 +1,5 @@
 node_modules
 .shadow-cljs
 .lsp
-public/js
+public/js/cljs-runtime
+public/js/manifest.edn
