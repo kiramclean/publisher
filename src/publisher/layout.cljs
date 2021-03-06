@@ -6,8 +6,7 @@
 
 (defn- main []
   [:main
-   [:button {:on-click login/github}
-    "Sign in with github"]])
+   [login/github]])
 
 (defn- footer []
   [:footer "Footer?"])
